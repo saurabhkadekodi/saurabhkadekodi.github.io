@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Saurabh Kadekodi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+	  <li class="active"><a href="#">Home</a></li>
+	  <li><a href="#">Projects</a></li>
+	  <li><a href="#">Resume</a></li>
+          <li><a href="#">Art Circle</a></li>
+        </ul>
+        <h3 class="muted">Saurabh Kadekodi</h3>
+      </div>
+
+      <hr>
+
+      <h4 class="muted">Space Maps in Ext4</h4>
+      <div class="row-fluid">
+	<div class="span12">
+		<p>Today, a graphical plot of the amount-of-data-in-the-world would result in a monotonically increasing curve with a rather steep slope. This fact brings forth numerous challenges revolving around scalability, reliability, consistency and many more dimensions. I am one of the many students staring in awe at the infinitely many prospects that this rapid change brings with it, particularly in the design of the next-gen storage systems, design of more efficient fault tolerance schemes, data compression and deduplication and also, with today’s scale, where n is indeed tending to infinity, the application of probabilistic and stochastic methods to an otherwise deterministic area of operating systems.</p>
+		<p>My first foray into storage systems was my senior year thesis in which three of my colleagues and I enhanced the free space management scheme of the Ext4 filesystem. Bitmap based structures carried over from Ext3 failed to exploit new features introduced in Ext4 viz. extents, persistent preallocation and delayed writes. We replaced bitmaps with a new Red-Black tree and log based data structure, called Space Maps, which reduced the metadata footprint by a factor of about 32 on average, almost eliminating the expensive seeks needed for metadata updates. This optimization resulted in about 30% speedup in allocations and about 80% speedup in deallocations. Our work was very well received and we won several accolades at national level project exhibitions. Not only did we ace the class that year, but on voluntarily working on it for a year after graduating, our efforts saw fruition when we published our results at the Ottawa Linux Symposium 2010 [1]. As a result we won the award of Best Alumni Research by our institution in 2010. Until senior year, I misunderstood my natural disposition to be towards performing arts with my love for music and theater. My near 3.2 undergraduate GPA can be attributed towards my delay in identifying with my true passion for computer science.</p>
+		<p>Space Maps was very successful but the research experience that influenced me the most was the graduate research assistantship at Parallel Data Lab (Carnegie Mellon University) where I worked on shingled disks under the esteemed guidance of Prof. Garth Gibson. Shingled disks (getting their name from the partially overlapping tracks on disk imitating shingled tiles on a roof) increase the number of tracks in the same physical space leading to significantly increased bit density. Understanding and exploiting the unique characteristics of this new design is crucial for enjoying its benefits, which the currently popular filesystems fail to do. Hence, along with the team at PDL, I built the first shingle-aware filesystem. This experience was a paradigm shift for me, as for the first time, rather than being among the consumers of some standard, I was among those that defined it. I loved this experience, and even though it was only for the summer, I still continue to collaborate with Prof. Gibson and his team at PDL on this project [2].</p>
+		<p>Another dimension of my interests is data compression. Fact - a drop of human blood weighs more than 600 GB! With a mere handful of DNA sequences running into petabytes, biological labs and companies dealing with genomic data are facing a very serious space complexity problem. The sheer randomness of a DNA sequence makes it impossible for any universal compression technique to make any sense of it. What started as a project in string size reduction had very quickly morphed into trying to establish order in chaos. While playing with hundreds of random DNA subsequences, I stumbled upon a novel preprocessing technique, which when applied, exposed a distinctive power-law governing the resulting sequence. This suddenly opened doors for applying Markovian compression techniques and variable length encoding mechanisms to an area where dictionary based compression has been the default and only choice. Albeit not at the level of publication yet, initial evaluations suggest a significant increase in the compression ratio after preprocessing, showing positive signs of the existence of a better compressor</p>
+        </div>
+      </div>
+
+      <hr>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
