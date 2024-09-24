@@ -75,6 +75,15 @@
 				<article class="resume-timeline-item position-relative pb-3">
 					<div class="resume-timeline-item-header mb-2">
 						<div class="d-flex flex-column flex-md-row">
+							<h3 class="resume-position-title font-weight-bold mb-1"><a href="https://sigops.org/s/conferences/sosp/2024/accepted.html">Morph: Efficient File-Lifetime Redundancy Management for Cluster File Systems</a></h3>
+							<div class="resume-company-name ml-auto">SOSP 2024 (to appear)</div>
+						</div><!--//row-->
+						<div class="resume-position-time">Timothy Kim, Sanjith Athlur, <font color="#434E5E">Saurabh Kadekodi</font>, Francisco Maturana, Dax Delvira, Arif Merchant, Gregory R. Ganger, K. V. Rashmi</div>
+					</div><!--//resume-timeline-item-header-->
+				</article>
+				<article class="resume-timeline-item position-relative pb-3">
+					<div class="resume-timeline-item-header mb-2">
+						<div class="d-flex flex-column flex-md-row">
 							<h3 class="resume-position-title font-weight-bold mb-1"><a href="https://www.usenix.org/conference/atc24/presentation/shirwadkar">FastCommit: resource-efficient, performant and cost-effective file system journaling</a></h3>
 							<div class="resume-company-name ml-auto">ATC 2024</div>
 						</div><!--//row-->
@@ -213,6 +222,80 @@
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Projects</h2>
 						    <div class="resume-section-content">
 							    <div class="resume-timeline position-relative">
+					<article class="resume-timeline-item position-relative pb-3">
+						<div class="resume-timeline-item-header mb-2">
+							<div class="d-flex flex-column flex-md-row">
+								<h3 class="resume-position-title font-weight-bold mb-0">FastCommit: resource-efficient, performant and cost-effective file system journaling</h3>
+								<!--<div class="resume-company-name ml-auto">Startup Hub</div>-->
+							</div><!--//row-->
+							<!--<div class="resume-position-time">2018 - Present</div>-->
+						</div><!--//resume-timeline-item-header-->
+						<div class="resume-timeline-item-desc">
+						<p>
+							FastCommit is a hybrid journaling approach
+							for Ext4 which performs logical journaling for simple and
+							frequent file system modifications, while relying on JBD2 for
+							more complex and rare modifications. Key design elements
+							of FastCommit are compact logging, selective flushing and
+							inline journaling.
+						</p>
+											<ul class="list-inline">
+						<li class="list-inline-item"><span class="badge badge-primary badge-pill"><a href="https://www.usenix.org/system/files/atc24-shirwadkar.pdf" style="color:white;">Paper</a></span></li>
+						<li class="list-inline-item"><span class="badge badge-primary badge-pill"><a href="https://github.com/harshadjs/fast-commit-atc-2024" style="color:white;">Code</a></span></li>
+						<li class="list-inline-item"><span class="badge badge-primary badge-pill"><a href="https://lwn.net/Articles/975772/" style="color:white;">Article</a></span></li>
+											</ul>
+										</div><!--//resume-timeline-item-desc-->
+					</article><!--//resume-timeline-item-->
+					
+					<article class="resume-timeline-item position-relative pb-3">
+						<div class="resume-timeline-item-header mb-2">
+							<div class="d-flex flex-column flex-md-row">
+								<h3 class="resume-position-title font-weight-bold mb-0">Thesios: Synthesizing Accurate Counterfactual I/O Traces from I/O Samples</h3>
+								<!--<div class="resume-company-name ml-auto">Startup Hub</div>-->
+							</div><!--//row-->
+							<!--<div class="resume-position-time">2018 - Present</div>-->
+						</div><!--//resume-timeline-item-header-->
+						<div class="resume-timeline-item-desc">
+						<p>
+							The Thesios methodology is to create accurate and representative I/O traces.
+							This is done by combining down-sampled I/O traces (which are routinely collected in Google's data centers) 
+							from multiple disks across multiple storage servers.
+						</p>
+											<ul class="list-inline">
+						<li class="list-inline-item"><span class="badge badge-primary badge-pill"><a href="https://dl.acm.org/doi/pdf/10.1145/3620666.3651337" style="color:white;">Paper</a></span></li>
+						<li class="list-inline-item"><span class="badge badge-primary badge-pill"><a href="https://cloud.google.com/blog/topics/systems/synthesized-google-storage-io-traces-now-available-as-open-source" style="color:white;">Blog</a></span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill"><a href="https://github.com/google-research-datasets/thesios" style="color:white;">Traces</a></span></li>
+											</ul>
+										</div><!--//resume-timeline-item-desc-->
+					</article><!--//resume-timeline-item-->
+
+					<article class="resume-timeline-item position-relative pb-3">
+									<div class="resume-timeline-item-header mb-2">
+										<div class="d-flex flex-column flex-md-row">
+											<h3 class="resume-position-title font-weight-bold mb-0">Practical Design Considerations for Wide Locally Recoverable Codes (LRCs)</h3>
+											<!--<div class="resume-company-name ml-auto">Startup Hub</div>-->
+										</div><!--//row-->
+										<!--<div class="resume-position-time">2018 - Present</div>-->
+									</div><!--//resume-timeline-item-header-->
+									<div class="resume-timeline-item-desc">
+					<p>
+					A practically-minded analysis of several popular and novel LRCs. Wide LRC reliability is a
+					subtle phenomenon that is sensitive to several design choices,
+					some of which are overlooked by theoreticians, and others
+					by practitioners. Based on these insights, we construct novel
+					LRCs called Uniform Cauchy LRCs, which show excellent
+					performance in simulations, and a 33% improvement in reliability on unavailability events observed by a wide LRC
+					deployed in a Google storage cluster. We also show that these
+					codes are easy to deploy in a manner that improves their
+					robustness to common maintenance events.
+					</p>
+										<ul class="list-inline">
+					<li class="list-inline-item"><span class="badge badge-primary badge-pill"><a href="https://www.usenix.org/system/files/fast23-kadekodi.pdf" style="color:white;">Paper</a></span></li>
+											<!-- <li class="list-inline-item"><span class="badge badge-primary badge-pill">Slides</span></li> -->
+										</ul>
+									</div><!--//resume-timeline-item-desc-->
+					</article><!--//resume-timeline-item-->
+
                     <article class="resume-timeline-item position-relative pb-3">
 									    <div class="resume-timeline-item-header mb-2">
 										    <div class="d-flex flex-column flex-md-row">
@@ -232,7 +315,7 @@
 											<ul class="list-inline">
                         <li class="list-inline-item"><span class="badge badge-primary badge-pill"><a href="https://github.com/thesys-lab/pacemaker-hdfs" style="color:white;">Code</a></span></li>
                         <li class="list-inline-item"><span class="badge badge-primary badge-pill"><a href="https://www.usenix.org/system/files/fast19-kadekodi.pdf" style="color:white;">Paper</a></span></li>
-												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Slides</span></li>
+												<!-- <li class="list-inline-item"><span class="badge badge-primary badge-pill">Slides</span></li> -->
 											</ul>
 									    </div><!--//resume-timeline-item-desc-->
 								    </article><!--//resume-timeline-item-->
@@ -250,7 +333,7 @@
 											<ul class="list-inline">
                         <li class="list-inline-item"><span class="badge badge-primary badge-pill"><a href="https://github.com/saurabhkadekodi/geriatrix.git" style="color:white;">Code</a></span></li>
                         <li class="list-inline-item"><span class="badge badge-primary badge-pill"><a href="geriatrix.pdf" style="color:white;">Paper</a></span></li>
-												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Slides</span></li>
+												<!-- <li class="list-inline-item"><span class="badge badge-primary badge-pill">Slides</span></li> -->
 											</ul>
 									    </div><!--//resume-timeline-item-desc-->
 								    </article><!--//resume-timeline-item-->
@@ -267,7 +350,7 @@
 											<p>Augmented a cloud file system’s write-back cache with a packing and indexing layer that coalesces small files to transform arbitrary user workload(s) to a write pattern more ideal for cloud storage in terms of — transfer sizes, number of objects and price. The result is a >60x improvement in performance and >25000x reduction in cloud storage price.</p>
 											<ul class="list-inline">
                         <li class="list-inline-item"><span class="badge badge-primary badge-pill"><a href="packing.pdf" style="color:white;">Paper</a></span></li>
-												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Slides</span></li>
+												<!-- <li class="list-inline-item"><span class="badge badge-primary badge-pill">Slides</span></li> -->
 											</ul>
 										</div><!--//resume-timeline-item-desc-->
 									</article><!--//resume-timeline-item-->
